@@ -1,29 +1,29 @@
-import {Button} from "./Button.jsx";
 import './HeroSection.css'
 import '../App.css'
+import {Button} from "./Button.jsx";
 
 export const HeroSection = () => {
+    const scrollDown = () => {
+        window.scrollBy({
+            top: 800,
+            left: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <div className={'hero-container'}>
-            {/*<video src={'/videos/video-2.mp4'} autoPlay loop muted/>*/}
-            <h1> ADVENTURE AWAITS</h1>
-            <p>what are you waiting for?</p>
-            <div className={'hero-btns'}>
-                <Button
-                    className={'btns'}
-                    buttonStyle={'btn--outline'}
-                    buttonSize={'btn--large'}
-                >
-                    GET STARTED
-                </Button>
-                <Button
-                    className={'btns'}
-                    buttonStyle={'btn--primary'}
-                    buttonSize={'btn--large'}
-                >
-                    WATCH TRAILER <i className={'far fa-play-circle'} />
-                </Button>
-            </div>
+            <h1>LOREM IPSUM</h1>
+            <p>Neque porro quisquam est qui dolorem</p>
+            <Button
+                className={'btns'}
+                buttonStyle={'btn--primary'}
+                buttonSize={'btn--large'}
+                onClick={scrollDown}
+            >
+                See more
+            </Button>
+
         </div>
     );
 };

@@ -1,43 +1,48 @@
 import CardItem from "./CardItem.jsx";
 import './Cards.css';
+import img1 from '../../public/images/img-test-1.jpg';
+import img2 from '../../public/images/img-test-2.jpg';
+import img3 from '../../public/images/img-test-3.jpg';
+import img4 from '../../public/images/img-test-4.jpg';
+import img5 from '../../public/images/img-test-5.jpg';
 
 const Cards = () => {
     return (
         <div className={'cards'}>
-            <h1>Check out these EPIC Destinations!</h1>
+            <h1>Ultrices euismod adipiscing augue nullam dolor</h1>
             <div className={'cards__container'}>
                 <div className={'cards__wrapper'}>
                     <ul className={'cards__items'}>
                         <CardItem
-                            src='images/img-9.jpg'
-                            text='Explore the hidden waterfall deep inside the Amazon Jungle'
-                            label='Adventure'
+                            src={img1}
+                            text='Donec at efficitur mus maximus himenaeos et'
+                            label='Duis aute'
                             path='/services'
                         />
                         <CardItem
-                            src='images/img-2.jpg'
-                            text='Travel through the Islands of Bali in a Private Cruise'
-                            label='Luxury'
+                            src={img2}
+                            text='Phasellus id nunc vulputate ut; massa nec lobortis'
+                            label='Excepteur'
                             path='/services'
                         />
                     </ul>
                     <ul className={'cards__items'}>
                         <CardItem
-                            src='images/img-3.jpg'
-                            text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
-                            label='Mystery'
+                            src={img3}
+                            text='Neque porro quisquam est qui'
+                            label='Ut enim'
                             path='/services'
                         />
                         <CardItem
-                            src='images/img-4.jpg'
-                            text='Experience Football on Top of the Himilayan Mountains'
-                            label='Adventure'
+                            src={img4}
+                            text='Quia dolor sit amet, consectetur'
+                            label='Deserunt'
                             path='/products'
                         />
                         <CardItem
-                            src='images/img-8.jpg'
-                            text='Ride through the Sahara Desert on a guided camel tour'
-                            label='Adrenaline'
+                            src={img5}
+                            text='Phasellus id nunc vulputate ut'
+                            label='Conubia'
                             path='/sign-up'
                         />
                     </ul>

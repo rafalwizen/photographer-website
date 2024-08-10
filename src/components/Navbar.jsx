@@ -28,15 +28,15 @@ function Navbar() {
         <>
             <nav className={'navbar'}>
                 <div className={'navbar-container'}>
-                    <Link to='/' className={'navbar-logo'} onClick={closeMobileMenu}>
-                        RW <i className={'fa-solid fa-paint-roller'}/>
+                    <Link to='/photographer-website' className={'navbar-logo'} onClick={closeMobileMenu}>
+                        Paweł Rozbicki &nbsp;<i className={'fa-solid fa-camera'}/>
                     </Link>
                     <div className={'menu-icon'} onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className={'nav-item'}>
-                            <Link to='/' className={'nav-links'} onClick={closeMobileMenu}>
+                            <Link to='/photographer-website' className={'nav-links'} onClick={closeMobileMenu}>
                                 Home
                             </Link>
                         </li>
