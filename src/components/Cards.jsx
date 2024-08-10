@@ -17,13 +17,13 @@ const Cards = () => {
                             src={img1}
                             text='Donec at efficitur mus maximus himenaeos et'
                             label='Duis aute'
-                            path='/services'
+                            path='/contact'
                         />
                         <CardItem
                             src={img2}
                             text='Phasellus id nunc vulputate ut; massa nec lobortis'
                             label='Excepteur'
-                            path='/services'
+                            path='/contact'
                         />
                     </ul>
                     <ul className={'cards__items'}>
@@ -31,13 +31,13 @@ const Cards = () => {
                             src={img3}
                             text='Neque porro quisquam est qui'
                             label='Ut enim'
-                            path='/services'
+                            path='/contact'
                         />
                         <CardItem
                             src={img4}
                             text='Quia dolor sit amet, consectetur'
                             label='Deserunt'
-                            path='/products'
+                            path='/gallery'
                         />
                         <CardItem
                             src={img5}
