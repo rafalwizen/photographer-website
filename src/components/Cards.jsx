@@ -15,15 +15,15 @@ const Cards = () => {
                     <ul className={'cards__items'}>
                         <CardItem
                             src={img1}
-                            text='Donec at efficitur mus maximus himenaeos et'
-                            label='Duis aute'
-                            path='/contact'
+                            text='Na razie każdy link przenosi do galerii'
+                            label='Galeria'
+                            path='/gallery'
                         />
                         <CardItem
                             src={img2}
-                            text='Phasellus id nunc vulputate ut; massa nec lobortis'
+                            text='Mógłby do podgalerii czy czegoś tego typu'
                             label='Excepteur'
-                            path='/contact'
+                            path='/gallery'
                         />
                     </ul>
                     <ul className={'cards__items'}>
@@ -31,7 +31,7 @@ const Cards = () => {
                             src={img3}
                             text='Neque porro quisquam est qui'
                             label='Ut enim'
-                            path='/contact'
+                            path='/gallery'
                         />
                         <CardItem
                             src={img4}
@@ -43,7 +43,7 @@ const Cards = () => {
                             src={img5}
                             text='Phasellus id nunc vulputate ut'
                             label='Conubia'
-                            path='/sign-up'
+                            path='/gallery'
                         />
                     </ul>
                 </div>

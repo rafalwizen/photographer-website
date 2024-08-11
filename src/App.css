@@ -7,8 +7,7 @@
 
 .home,
 .contact,
-.gallery,
-.sign-up {
+.gallery {
     display: flex;
     height: 90vh;
     align-items: center;
@@ -17,7 +16,7 @@
 }
 
 .contact {
-    background-image: url('/public/images/img-2.jpg');
+    /*background-image: url('/public/images/img-2.jpg');*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,19 +25,28 @@
 }
 
 .gallery {
-    background-image: url('/public/images/img-1.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     color: #373737;
     font-size: 100px;
 }
 
-.sign-up {
-    background-image: url('/public/images/img-8.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #373737;
-    font-size: 100px;
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
