@@ -42,7 +42,16 @@ function Navbar() {
                         </li>
                         <li className={'nav-item'}>
                             <Link
-                                to='/gallery'
+                                to='/photographer-website/about-me'
+                                className={'nav-links'}
+                                onClick={closeMobileMenu}
+                            >
+                                O mnie
+                            </Link>
+                        </li>
+                        <li className={'nav-item'}>
+                            <Link
+                                to='/photographer-website/gallery'
                                 className={'nav-links'}
                                 onClick={closeMobileMenu}
                             >
@@ -51,7 +60,25 @@ function Navbar() {
                         </li>
                         <li className={'nav-item'}>
                             <Link
-                                to='/contact'
+                                to='/photographer-website/opinions'
+                                className={'nav-links'}
+                                onClick={closeMobileMenu}
+                            >
+                                Opinie
+                            </Link>
+                        </li>
+                        <li className={'nav-item'}>
+                            <Link
+                                to='/photographer-website/offer'
+                                className={'nav-links'}
+                                onClick={closeMobileMenu}
+                            >
+                                Oferta
+                            </Link>
+                        </li>
+                        <li className={'nav-item'}>
+                            <Link
+                                to='/photographer-website/contact'
                                 className={'nav-links'}
                                 onClick={closeMobileMenu}
                             >

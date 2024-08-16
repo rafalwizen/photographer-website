@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ImageModal from '../ImageModal.jsx';
 import '../../App.css';
+import './Gallery.css';
 
 const images = import.meta.glob('../../../public/images/*-full.{png,jpg,jpeg,svg}');
 const thumbnails = import.meta.glob('../../../public/images/*-small.{png,jpg,jpeg,svg}');
