@@ -156,3 +156,35 @@
         transition: 250ms;
     }
 }
+
+.language-switcher {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.language-switcher button {
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.language-switcher button:hover {
+    background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 960px) {
+    .language-switcher {
+        top: 15px;
+        right: 60px;
+    }
+
+    .menu-icon {
+        transform: translate(-100%, 30%);
+    }
+}
+

@@ -14,12 +14,12 @@ export const MainSection = ({ scrollToCards }) => {
     }, []);
 
     return (
-        <div className="main-container" ref={mainSectionRef}>
-            <div className="text-content">
+        <div className={"main-container"} ref={mainSectionRef}>
+            <div className={"text-content"}>
                 <h1>IPSUM LOREM</h1>
                 <p>Neque porro est zmyślonym tekstorem</p>
             </div>
-            <div className="main-btns">
+            <div className={"main-btns"}>
                 <Button
                     className={'btns'}
                     buttonStyle={'btn--primary'}

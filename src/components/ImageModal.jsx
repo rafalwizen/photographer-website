@@ -21,12 +21,12 @@ const ImageModal = ({ image, onClose, onNext, onPrev }) => {
     }, []);
 
     return (
-        <div className="modal-overlay" onClick={onClose}>
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                <button className="modal-close" onClick={onClose}>X</button>
-                <button className="modal-prev" onClick={onPrev}>&larr;</button>
-                <img src={image} alt="Modal content" className="modal-image" />
-                <button className="modal-next" onClick={onNext}>&rarr;</button>
+        <div className={"modal-overlay"} onClick={onClose}>
+            <div className={"modal-content"} onClick={(e) => e.stopPropagation()}>
+                <button className={"modal-close"} onClick={onClose}>X</button>
+                <button className={"modal-prev"} onClick={onPrev}>&larr;</button>
+                <img src={image} alt={"Modal content"} className={"modal-image"} />
+                <button className={"modal-next"} onClick={onNext}>&rarr;</button>
             </div>
         </div>
     );

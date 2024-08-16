@@ -1,0 +1,23 @@
+{
+  "navbar": {
+    "home": "Strona Główna",
+    "about_me": "O mnie",
+    "gallery": "Galeria",
+    "opinions": "Opinie",
+    "offer": "Oferta",
+    "contact": "Kontakt"
+  },
+  "cards": {
+    "heading": "Ultrices euismod adipiscing augue nullam dolor",
+    "card1_text": "Linki przenosza tam gdzie pokazue mały opis",
+    "card1_label": "Galeria",
+    "card2_text": "te podpisy nie wiem czy są przydatne",
+    "card2_label": "Opinie",
+    "card3_text": "Neque porro quisquam est qui",
+    "card3_label": "O mnie",
+    "card4_text": "Quia dolor sit amet, consectetur",
+    "card4_label": "Oferta",
+    "card5_text": "Phasellus id nunc vulputate ut",
+    "card5_label": "Kontakt"
+  }
+}

@@ -51,9 +51,9 @@ const Gallery = () => {
     };
 
     return (
-        <div className="gallery-grid">
+        <div className={"gallery-grid"}>
             {thumbnailList.map((thumbnail, index) => (
-                <div key={index} className="gallery-item" onClick={() => openModal(index)}>
+                <div key={index} className={"gallery-item"} onClick={() => openModal(index)}>
                     <img src={thumbnail} alt={`Gallery image ${index + 1}`} />
                 </div>
             ))}

@@ -30,7 +30,7 @@ const Sidebar = () => {
     return (
         <div ref={sidebarRef} className={`sidebar ${isOpen ? 'open' : ''}`}>
             <div
-                className="sidebar-icon"
+                className={"sidebar-icon"}
                 onClick={() => setIsOpen(!isOpen)}
             >
                 <span>☰ Kontakt</span>
