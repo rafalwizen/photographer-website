@@ -1,10 +1,10 @@
 import CardItem from "./CardItem.jsx";
 import './Cards.css';
-import img1 from '../../public/images/img-test-1.jpg';
-import img2 from '../../public/images/img-test-2.jpg';
-import img3 from '../../public/images/img-test-3.jpg';
-import img4 from '../../public/images/img-test-4.jpg';
-import img5 from '../../public/images/img-test-5.jpg';
+import img1 from '../../public/images/img-test-1-small.jpg';
+import img2 from '../../public/images/img-test-2-small.jpg';
+import img3 from '../../public/images/img-test-3-small.jpg';
+import img4 from '../../public/images/img-test-4-small.jpg';
+import img5 from '../../public/images/img-test-5-small.jpg';
 
 const Cards = () => {
     return (

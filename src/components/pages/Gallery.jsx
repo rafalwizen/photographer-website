@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import ImageModal from '../ImageModal.jsx';
 import '../../App.css';
 
-const images = import.meta.glob('../../../public/images/*.{png,jpg,jpeg,svg}');
+const images = import.meta.glob('../../../public/images/*-full.{png,jpg,jpeg,svg}');
+const thumbnails = import.meta.glob('../../../public/images/*-small.{png,jpg,jpeg,svg}');
 
 const Gallery = () => {
     const [imageList, setImageList] = useState([]);
+    const [thumbnailList, setThumbnailList] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(null);
 
     useEffect(() => {
@@ -16,7 +18,16 @@ const Gallery = () => {
                     return module.default;
                 })
             );
+
+            const importedThumbnails = await Promise.all(
+                Object.keys(thumbnails).map(async (key) => {
+                    const module = await thumbnails[key]();
+                    return module.default;
+                })
+            );
+
             setImageList(importedImages);
+            setThumbnailList(importedThumbnails);
         };
 
         loadImages();
@@ -40,9 +51,9 @@ const Gallery = () => {
 
     return (
         <div className="gallery-grid">
-            {imageList.map((image, index) => (
+            {thumbnailList.map((thumbnail, index) => (
                 <div key={index} className="gallery-item" onClick={() => openModal(index)}>
-                    <img src={image} alt={`Gallery image ${index + 1}`} />
+                    <img src={thumbnail} alt={`Gallery image ${index + 1}`} />
                 </div>
             ))}
             {currentIndex !== null && (

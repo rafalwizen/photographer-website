@@ -29,7 +29,7 @@ function Navbar() {
             <nav className={'navbar'}>
                 <div className={'navbar-container'}>
                     <Link to='/photographer-website/' className={'navbar-logo'} onClick={closeMobileMenu}>
-                        Paweł Rozbicki &nbsp;<i className={'fa-solid fa-camera'}/>
+                        Paweł Rozbicki
                     </Link>
                     <div className={'menu-icon'} onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

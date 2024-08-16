@@ -3,7 +3,7 @@
 }
 
 .main-container {
-    background: url('/public/images/img-test-5.jpg') center center/cover no-repeat;
+    background: url('/public/images/img-test-5-big.jpg') center center/cover no-repeat;
     height: calc(100vh - var(--navbar-height));
     width: 100%;
     display: flex;

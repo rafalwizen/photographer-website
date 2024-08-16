@@ -7,7 +7,7 @@ export const MainSection = ({ scrollToCards }) => {
     const mainSectionRef = useRef(null);
 
     useEffect(() => {
-        const navbarHeight = 80; // Wysokość Navbaru
+        const navbarHeight = 80;
         if (mainSectionRef.current) {
             mainSectionRef.current.style.height = `calc(100vh - ${navbarHeight}px)`;
         }
