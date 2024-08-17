@@ -7,6 +7,12 @@
     "offer": "Oferta",
     "contact": "Kontakt"
   },
+  "sidebar": {
+    "contact": "Kontakt"
+  },
+  "main": {
+    "see_more": "Zobacz więcej"
+  },
   "cards": {
     "heading": "Ultrices euismod adipiscing augue nullam dolor",
     "card1_text": "Linki przenosza tam gdzie pokazue mały opis",

@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Sidebar.css';
+import { useTranslation } from 'react-i18next';
 
 const Sidebar = () => {
+    const { t, i18n } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
     const sidebarRef = useRef(null);
 
@@ -33,7 +35,7 @@ const Sidebar = () => {
                 className={"sidebar-icon"}
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <span>☰ Kontakt</span>
+                <span>☰ {t('sidebar.contact')}</span>
             </div>
             <div className={`sidebar-content ${isOpen ? 'open' : ''}`}>
                 <p>Tutaj dodamy co trzeba.</p>

@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import './MainSection.css';
 import '../App.css';
+import { useTranslation } from 'react-i18next';
 import { Button } from "./Button.jsx";
 
 export const MainSection = ({ scrollToCards }) => {
+    const { t, i18n } = useTranslation();
     const mainSectionRef = useRef(null);
 
     useEffect(() => {
@@ -26,7 +28,7 @@ export const MainSection = ({ scrollToCards }) => {
                     buttonSize={'btn--large'}
                     onClick={scrollToCards}
                 >
-                    See more
+                    {t('main.see_more')}
                 </Button>
             </div>
         </div>
