@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Navbar.css';
@@ -10,8 +10,9 @@ function Navbar() {
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
+    const changeLanguage = () => {
+        const newLanguage = i18n.language === 'pl' ? 'en' : 'pl';
+        i18n.changeLanguage(newLanguage);
     };
 
     return (
@@ -77,8 +78,9 @@ function Navbar() {
                         </li>
                     </ul>
                     <div className={"language-switcher"}>
-                        <button onClick={() => changeLanguage('pl')}>PL</button>
-                        <button onClick={() => changeLanguage('en')}>EN</button>
+                        <button onClick={changeLanguage}>
+                            {i18n.language === 'pl' ? 'EN' : 'PL'}
+                        </button>
                     </div>
                 </div>
             </nav>
