@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import ImageModal from '../ImageModal.jsx';
 import '../../App.css';
 import './Gallery.css';
@@ -8,13 +8,13 @@ const baseUrl = import.meta.env.VITE_PUBLIC_BASE_URL;
 const loadImages = async (galleryName, imagesSize) => {
     const indices = Array.from({ length: imagesSize }, (_, index) => index + 1);
     const imagePromises = indices.map(index =>
-        fetch(`${baseUrl}/images/${galleryName}/${galleryName}/${index}-full.jpg`)
+        fetch(`${baseUrl}/images/${galleryName}/${index}-full.jpg`)
             .then(response => response.ok ? `${baseUrl}/public/images/${galleryName}/${index}-full.jpg` : null)
             .catch(() => null)
     );
 
     const thumbnailPromises = indices.map(index =>
-        fetch(`${baseUrl}/images/${galleryName}/${galleryName}/${index}-small.jpg`)
+        fetch(`${baseUrl}/images/${galleryName}/${index}-small.jpg`)
             .then(response => response.ok ? `${baseUrl}/public/images/${galleryName}/${index}-small.jpg` : null)
             .catch(() => null)
     );
