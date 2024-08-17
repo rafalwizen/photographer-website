@@ -1,0 +1,20 @@
+[
+  {
+    "id": "gallery1",
+    "name": "Na polu",
+    "thumbnail": "thumbnail.jpg",
+    "folder": "gallery1"
+  },
+  {
+    "id": "gallery2",
+    "name": "Na trawie",
+    "thumbnail": "thumbnail.jpg",
+    "folder": "gallery2"
+  },
+  {
+    "id": "gallery3",
+    "name": "Duża galeria",
+    "thumbnail": "thumbnail.jpg",
+    "folder": "gallery3"
+  }
+]

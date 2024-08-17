@@ -1,0 +1,23 @@
+.gallery-container {
+    padding: 20px;
+}
+
+.thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.prev-button {
+    padding: 10px 20px;
+    background-color: #373737;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.prev-button:hover {
+    background-color: #373737;
+}
