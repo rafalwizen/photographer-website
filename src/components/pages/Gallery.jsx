@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import ImageModal from '../ImageModal.jsx';
+import galleryData from '../../config/galleriesConfig.json';
 import '../../App.css';
 import './Gallery.css';
 
@@ -32,10 +33,9 @@ const Gallery = ({ galleryName }) => {
 
     useEffect(() => {
         const loadImagesFromGallery = async () => {
-            const allImages = import.meta.glob('/public/images/*/*-small.jpg');
-            const galleryImages = Object.keys(allImages).filter(path => path.includes(`/${galleryName}/`));
-            const imagePaths = Object.keys(galleryImages);
-            const { images, thumbnails } = await loadImages(galleryName, imagePaths.length);
+            const gallery = galleryData.find(item => item.id === galleryName);
+            const numberOfImages = gallery ? gallery.numberOfImages : null;
+            const { images, thumbnails } = await loadImages(galleryName, numberOfImages);
             setImageList(images);
             setThumbnailList(thumbnails);
         };

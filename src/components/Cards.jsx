@@ -1,4 +1,3 @@
-import React from 'react';
 import CardItem from "./CardItem.jsx";
 import './Cards.css';
 import img1 from '../../public/images/img-test-1-small.jpg';

@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import './MainSection.css';
 import '../App.css';
 import { useTranslation } from 'react-i18next';
 import { Button } from "./Button.jsx";
 
 export const MainSection = ({ scrollToCards }) => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const mainSectionRef = useRef(null);
 
     useEffect(() => {
