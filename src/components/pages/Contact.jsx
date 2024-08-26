@@ -2,7 +2,7 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import '../../App.css';
 import './Contact.css';
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
     const { t } = useTranslation();

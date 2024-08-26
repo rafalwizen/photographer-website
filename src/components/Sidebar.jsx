@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import './Sidebar.css';
 import { useTranslation } from 'react-i18next';
+import Contact from "./pages/Contact.jsx";
 
 const Sidebar = () => {
     const { t } = useTranslation();
@@ -38,7 +39,7 @@ const Sidebar = () => {
                 <span>☰ {t('sidebar.contact')}</span>
             </div>
             <div className={`sidebar-content ${isOpen ? 'open' : ''}`}>
-                <p>Tutaj dodamy co trzeba.</p>
+                <Contact/>
             </div>
         </div>
     );
