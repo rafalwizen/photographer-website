@@ -25,5 +25,12 @@
     "card4_label": "Oferta",
     "card5_text": "Phasellus id nunc vulputate ut",
     "card5_label": "Kontakt"
+  },
+  "contact" : {
+    "name": "Imię",
+    "email": "Email",
+    "phone": "Telefon",
+    "message": "Wiadomość",
+    "send": "Wyślij"
   }
 }

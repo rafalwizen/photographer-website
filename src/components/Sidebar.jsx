@@ -3,7 +3,7 @@ import './Sidebar.css';
 import { useTranslation } from 'react-i18next';
 
 const Sidebar = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
     const sidebarRef = useRef(null);
 

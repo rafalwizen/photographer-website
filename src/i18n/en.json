@@ -25,5 +25,12 @@
     "card4_label": "Oferta",
     "card5_text": "Phasellus id nunc vulputate ut",
     "card5_label": "Conubia"
+  },
+  "contact" : {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send"
   }
 }

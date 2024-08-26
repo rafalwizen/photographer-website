@@ -2,8 +2,10 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import '../../App.css';
 import './Contact.css';
+import {useTranslation} from "react-i18next";
 
 const Contact = () => {
+    const { t } = useTranslation();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -26,29 +28,29 @@ const Contact = () => {
                 alert('An error occurred, please try again');
                 console.log(error.text);
             });
-        e.target.reset(); // Reset form after submission
+        e.target.reset();
     };
 
     return (
         <>
             <form onSubmit={handleSubmit} className="contact-form">
-                <div>
-                    <label htmlFor="name">Name:</label>
+                <div className="form-group">
+                    <label htmlFor="name">{t('contact.name')}:</label>
                     <input type="text" id="name" name="name" required onChange={handleChange} />
                 </div>
-                <div>
-                    <label htmlFor="email">Email:</label>
+                <div className="form-group">
+                    <label htmlFor="email">{t('contact.email')}:</label>
                     <input type="email" id="email" name="email" required onChange={handleChange} />
                 </div>
-                <div>
-                    <label htmlFor="phone">Phone:</label>
+                <div className="form-group">
+                    <label htmlFor="phone">{t('contact.phone')}:</label>
                     <input type="tel" id="phone" name="phone" required onChange={handleChange} />
                 </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
+                <div className="form-group">
+                    <label htmlFor="message">{t('contact.message')}:</label>
                     <textarea id="message" name="message" required onChange={handleChange}></textarea>
                 </div>
-                <button type="submit">Send</button>
+                <button type="submit" className="submit-button">{t('contact.send')}</button>
             </form>
         </>
     );
