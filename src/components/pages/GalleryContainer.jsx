@@ -29,7 +29,7 @@ const GalleryContainer = () => {
                 </>
             ) : (
                 <div className="thumbnail-grid">
-                {galleryData.map((gallery) => (
+                    {galleryData.map((gallery) => (
                         <GalleryThumbnail
                             key={gallery.id}
                             image={`${baseUrl}/images/${gallery.folder}/${gallery.thumbnail}`}

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import MainSection from "../MainSection.jsx";
 import Cards from "../Cards.jsx";
 

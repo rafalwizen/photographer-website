@@ -9,15 +9,19 @@
 }
 
 .prev-button {
-    padding: 10px 20px;
-    background-color: #373737;
-    color: white;
+    position: fixed;
+    top: 90px;
+    left: 20px;
+    z-index: 1000;
+    background-color: #fff;
     border: none;
-    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 20px;
     cursor: pointer;
-    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .prev-button:hover {
-    background-color: #373737;
+    background-color: #f1f1f1;
 }
