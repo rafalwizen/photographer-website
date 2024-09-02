@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Navbar.css';
+import logo from '../../public/images/logo.jpg';
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -19,7 +20,8 @@ function Navbar() {
         <>
             <nav className={'navbar'}>
                 <div className={'navbar-container'}>
-                    <Link to='/' className={'navbar-logo'} onClick={closeMobileMenu}>
+                    <Link to='/photographer-website/' className={'navbar-logo'} onClick={closeMobileMenu}>
+                        <img src={logo} alt="Profile" className="navbar-logo-image" />
                         Paweł Rozbicki
                     </Link>
                     <div className={'menu-icon'} onClick={handleClick}>
@@ -27,13 +29,8 @@ function Navbar() {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className={'nav-item'}>
-                            <Link to={'/photographer-website/'} className={'nav-links'} onClick={closeMobileMenu}>
-                                {t('navbar.home')}
-                            </Link>
-                        </li>
-                        <li className={'nav-item'}>
                             <Link
-                                to={'/photographer-website/about-me'}
+                                to={'/photographer-website/'}
                                 className={'nav-links'}
                                 onClick={closeMobileMenu}
                             >
