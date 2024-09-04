@@ -8,13 +8,13 @@ const loadImages = async (galleryName, imagesSize) => {
     const indices = Array.from({ length: imagesSize }, (_, index) => index + 1);
     const imagePromises = indices.map(index =>
         fetch(`/images/${galleryName}/${index}-full.jpg`)
-            .then(response => response.ok ? `/public/images/${galleryName}/${index}-full.jpg` : null)
+            .then(response => response.ok ? `/images/${galleryName}/${index}-full.jpg` : null)
             .catch(() => null)
     );
 
     const thumbnailPromises = indices.map(index =>
         fetch(`/images/${galleryName}/${index}-small.jpg`)
-            .then(response => response.ok ? `/public/images/${galleryName}/${index}-small.jpg` : null)
+            .then(response => response.ok ? `/images/${galleryName}/${index}-small.jpg` : null)
             .catch(() => null)
     );
 
