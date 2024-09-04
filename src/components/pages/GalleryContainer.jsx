@@ -5,8 +5,6 @@ import '../../App.css';
 import './GalleryContainer.css';
 import galleryData from '../../config/galleriesConfig.json';
 
-const baseUrl = import.meta.env.VITE_PUBLIC_BASE_URL;
-
 const GalleryContainer = () => {
     const [selectedGallery, setSelectedGallery] = useState(null);
 
@@ -32,7 +30,7 @@ const GalleryContainer = () => {
                     {galleryData.map((gallery) => (
                         <GalleryThumbnail
                             key={gallery.id}
-                            image={`${baseUrl}/images/${gallery.folder}/${gallery.thumbnail}`}
+                            image={`/images/${gallery.folder}/${gallery.thumbnail}`}
                             onClick={() => handleGalleryClick(gallery.folder)}
                             altText={`Thumbnail for ${gallery.name}`}
                             title={gallery.name}

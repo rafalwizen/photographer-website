@@ -4,19 +4,17 @@ import galleryData from '../../config/galleriesConfig.json';
 import '../../App.css';
 import './Gallery.css';
 
-const baseUrl = import.meta.env.VITE_PUBLIC_BASE_URL;
-
 const loadImages = async (galleryName, imagesSize) => {
     const indices = Array.from({ length: imagesSize }, (_, index) => index + 1);
     const imagePromises = indices.map(index =>
-        fetch(`${baseUrl}/images/${galleryName}/${index}-full.jpg`)
-            .then(response => response.ok ? `${baseUrl}/public/images/${galleryName}/${index}-full.jpg` : null)
+        fetch(`/images/${galleryName}/${index}-full.jpg`)
+            .then(response => response.ok ? `/public/images/${galleryName}/${index}-full.jpg` : null)
             .catch(() => null)
     );
 
     const thumbnailPromises = indices.map(index =>
-        fetch(`${baseUrl}/images/${galleryName}/${index}-small.jpg`)
-            .then(response => response.ok ? `${baseUrl}/public/images/${galleryName}/${index}-small.jpg` : null)
+        fetch(`/images/${galleryName}/${index}-small.jpg`)
+            .then(response => response.ok ? `/public/images/${galleryName}/${index}-small.jpg` : null)
             .catch(() => null)
     );
 

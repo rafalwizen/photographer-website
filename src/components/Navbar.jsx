@@ -20,7 +20,7 @@ function Navbar() {
         <>
             <nav className={'navbar'}>
                 <div className={'navbar-container'}>
-                    <Link to='/photographer-website/' className={'navbar-logo'} onClick={closeMobileMenu}>
+                    <Link to='/' className={'navbar-logo'} onClick={closeMobileMenu}>
                         <img src={logo} alt="Profile" className="navbar-logo-image" />
                         Paweł Rozbicki
                     </Link>
@@ -30,7 +30,7 @@ function Navbar() {
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className={'nav-item'}>
                             <Link
-                                to={'/photographer-website/'}
+                                to={'/'}
                                 className={'nav-links'}
                                 onClick={closeMobileMenu}
                             >
@@ -39,7 +39,7 @@ function Navbar() {
                         </li>
                         <li className={'nav-item'}>
                             <Link
-                                to={'/photographer-website/gallery'}
+                                to={'/gallery'}
                                 className={'nav-links'}
                                 onClick={closeMobileMenu}
                             >
@@ -48,7 +48,7 @@ function Navbar() {
                         </li>
                         <li className={'nav-item'}>
                             <Link
-                                to={'/photographer-website/opinions'}
+                                to={'/opinions'}
                                 className={'nav-links'}
                                 onClick={closeMobileMenu}
                             >
@@ -57,7 +57,7 @@ function Navbar() {
                         </li>
                         <li className={'nav-item'}>
                             <Link
-                                to={'/photographer-website/offer'}
+                                to={'/offer'}
                                 className={'nav-links'}
                                 onClick={closeMobileMenu}
                             >
@@ -66,7 +66,7 @@ function Navbar() {
                         </li>
                         <li className={'nav-item'}>
                             <Link
-                                to={'/photographer-website/contact'}
+                                to={'/contact'}
                                 className={'nav-links'}
                                 onClick={closeMobileMenu}
                             >

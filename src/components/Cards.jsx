@@ -20,13 +20,13 @@ const Cards = () => {
                             src={img1}
                             text={t('cards.card1_text')}
                             label={t('cards.card1_label')}
-                            path={'/photographer-website/gallery'}
+                            path={'/gallery'}
                         />
                         <CardItem
                             src={img2}
                             text={t('cards.card2_text')}
                             label={t('cards.card2_label')}
-                            path={'/photographer-website/opinions'}
+                            path={'/opinions'}
                         />
                     </ul>
                     <ul className={'cards__items'}>
@@ -34,19 +34,19 @@ const Cards = () => {
                             src={img3}
                             text={t('cards.card3_text')}
                             label={t('cards.card3_label')}
-                            path={'/photographer-website/about-me'}
+                            path={'/about-me'}
                         />
                         <CardItem
                             src={img4}
                             text={t('cards.card4_text')}
                             label={t('cards.card4_label')}
-                            path={'/photographer-website/offer'}
+                            path={'/offer'}
                         />
                         <CardItem
                             src={img5}
                             text={t('cards.card5_text')}
                             label={t('cards.card5_label')}
-                            path={'/photographer-website/contact'}
+                            path={'/contact'}
                         />
                     </ul>
                 </div>
