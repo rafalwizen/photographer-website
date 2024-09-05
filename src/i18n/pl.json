@@ -31,6 +31,8 @@
     "email": "Email",
     "phone": "Telefon",
     "message": "Wiadomość",
-    "send": "Wyślij"
+    "send": "Wyślij",
+    "send_alert_success": "Wiadomość została pomyślnie wysłana",
+    "send_alert_error": "Wystąpił błąd, spróbuj ponownie"
   }
 }

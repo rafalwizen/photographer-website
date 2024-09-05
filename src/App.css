@@ -25,6 +25,7 @@
 .about,
 .offer,
 .gallery {
+    font-family: 'MontserratVariableFontWght', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
     display: flex;
     height: 90vh;
     align-items: center;

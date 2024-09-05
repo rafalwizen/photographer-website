@@ -22,10 +22,10 @@ const Contact = () => {
         e.preventDefault();
         emailjs.sendForm('service_ii4htdo', 'template_n40tmu1', e.target, '2MYnHPXdGIHXf_bxO')
             .then((result) => {
-                alert('Message sent successfully!');
+                alert(t('contact.send_alert_success'));
                 console.log(result.text);
             }, (error) => {
-                alert('An error occurred, please try again');
+                alert(t('contact.send_alert_error'));
                 console.log(error.text);
             });
         e.target.reset();
