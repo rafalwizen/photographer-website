@@ -5,6 +5,20 @@
     font-family: 'PT Sans', sans-serif;
 }
 
+@font-face {
+    font-family: 'TruesdellStdBoldItalic';
+    src: url('/src/assets/fonts/truesdell_std_bold_italic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'MontserratVariableFontWght';
+    src: url('/src/assets/fonts/montserrat_variable_font_wght.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .home,
 .contact,
 .opinions,

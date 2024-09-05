@@ -22,7 +22,7 @@ function Navbar() {
                 <div className={'navbar-container'}>
                     <Link to='/' className={'navbar-logo'} onClick={closeMobileMenu}>
                         <img src={logo} alt="Profile" className="navbar-logo-image" />
-                        Paweł Rozbicki
+                        <span className="navbar-logo-text">Paweł Rozbicki</span>
                     </Link>
                     <div className={'menu-icon'} onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

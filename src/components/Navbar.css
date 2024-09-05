@@ -1,3 +1,11 @@
+.navbar-logo-text {
+    font-family: 'TruesdellStdBoldItalic', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2rem;
+    color: #373737;
+}
+
 .navbar {
     background: #ffffff;
     height: 80px;
@@ -24,9 +32,9 @@
     margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
     display: flex;
     align-items: center;
+    font-size: 2rem;
 }
 
 .navbar-logo-image {
@@ -53,6 +61,7 @@
 }
 
 .nav-links {
+    font-family: 'MontserratVariableFontWght', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
     color: #373737;
     display: flex;
     align-items: center;
@@ -68,10 +77,6 @@
 
 .fa-bars {
     color: #373737;
-}
-
-.nav-links-mobile {
-    display: none;
 }
 
 .menu-icon {
@@ -119,16 +124,23 @@
     .navbar-logo {
         position: absolute;
         top: 0;
-        left: 0;
-        transform: translate(25%, 50%);
+        left: 10px;
+        transform: translate(10%, 50%);
+        font-size: 1.5rem;
+    }
+
+    .navbar-logo-image {
+        width: 60px;
+        height: 60px;
+        margin-right: 5px;
     }
 
     .menu-icon {
         display: block;
         position: absolute;
         top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
+        right: 10px;
+        transform: translateY(50%);
         font-size: 1.8rem;
         cursor: pointer;
     }
@@ -158,6 +170,12 @@
         color: #242424;
         transition: 250ms;
     }
+
+    .language-switcher {
+        position: absolute;
+        top: 15px;
+        right: 50px;
+    }
 }
 
 .language-switcher {
@@ -179,15 +197,3 @@
 .language-switcher button:hover {
     background-color: #f1f1f1;
 }
-
-@media screen and (max-width: 960px) {
-    .language-switcher {
-        top: 15px;
-        right: 60px;
-    }
-
-    .menu-icon {
-        transform: translate(-100%, 30%);
-    }
-}
-
