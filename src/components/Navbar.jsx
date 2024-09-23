@@ -48,15 +48,6 @@ function Navbar() {
                         </li>
                         <li className={'nav-item'}>
                             <Link
-                                to={'/opinions'}
-                                className={'nav-links'}
-                                onClick={closeMobileMenu}
-                            >
-                                {t('navbar.opinions')}
-                            </Link>
-                        </li>
-                        <li className={'nav-item'}>
-                            <Link
                                 to={'/offer'}
                                 className={'nav-links'}
                                 onClick={closeMobileMenu}

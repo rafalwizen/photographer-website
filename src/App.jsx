@@ -1,30 +1,31 @@
-import './App.css'
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Sidebar from "./components/Sidebar.jsx";
+import Opinions from "./components/Opinions.jsx";
 import About from "./components/pages/About.jsx";
 import GalleryContainer from "./components/pages/GalleryContainer.jsx";
-import Opinions from "./components/pages/Opinions.jsx";
 import Offer from "./components/pages/Offer.jsx";
 import Contact from "./components/pages/Contact.jsx";
 
 function App() {
-
     return (
-        <>
-            <Router>
-                <Navbar/>
-                <Routes>
-                    <Route path={"/"} element={<About/>}/>
-                    <Route path={"/gallery"} element={<GalleryContainer/>}/>
-                    <Route path={"/opinions"} element={<Opinions/>}/>
-                    <Route path={"/offer"} element={<Offer/>}/>
-                    <Route path={"/contact"} element={<Contact/>}/>
-                </Routes>
+        <Router>
+            <div className="app-container">
+                <Navbar />
+                <div className="main-content">
+                    <Routes>
+                        <Route path={"/"} element={<About />} />
+                        <Route path={"/gallery"} element={<GalleryContainer />} />
+                        <Route path={"/offer"} element={<Offer />} />
+                        <Route path={"/contact"} element={<Contact />} />
+                    </Routes>
+                </div>
+                <Opinions />
                 <Sidebar />
-            </Router>
-        </>
-    )
+            </div>
+        </Router>
+    );
 }
 
-export default App
+export default App;

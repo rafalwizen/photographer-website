@@ -19,9 +19,18 @@
     font-style: normal;
 }
 
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+}
+
 .home,
 .contact,
-.opinions,
 .about,
 .offer,
 .gallery {
@@ -34,16 +43,6 @@
 }
 
 .contact {
-    /*background-image: url('/public/images/img-2.jpg');*/
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #373737;
-    font-size: 100px;
-}
-
-.opinions {
-    /*background-image: url('/public/images/img-2.jpg');*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,7 +51,6 @@
 }
 
 .about {
-    /*background-image: url('/public/images/img-2.jpg');*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -61,7 +59,6 @@
 }
 
 .offer {
-    /*background-image: url('/public/images/img-2.jpg');*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
