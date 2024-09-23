@@ -3,7 +3,7 @@ import Gallery from './Gallery';
 import GalleryThumbnail from './GalleryThumbnail';
 import '../../App.css';
 import './GalleryContainer.css';
-import galleryData from '../../config/galleriesConfig.json';
+import galleryData from '../../assets/config/galleriesConfig.json';
 
 const GalleryContainer = () => {
     const [selectedGallery, setSelectedGallery] = useState(null);
