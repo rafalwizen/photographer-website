@@ -1,11 +1,24 @@
 import { useState, useEffect, useRef } from "react";
 import "./Opinions.css";
-import opinionsData from '../assets/config/opinionsConfig.json';
 
 const Opinions = () => {
     const [currentComment, setCurrentComment] = useState(0);
     const [isAnimating, setIsAnimating] = useState(true);
+    const [opinionsData, setOpinionsData] = useState([]);
     const wrapperRef = useRef(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('/config/opinionsConfig.json');
+                const data = await response.json();
+                setOpinionsData(data);
+            } catch (error) {
+                console.error('Error loading opinions config:', error);
+            }
+        };
+        fetchData();
+    }, []);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -17,13 +30,13 @@ const Opinions = () => {
     }, []);
 
     useEffect(() => {
-        if (currentComment === opinionsData.length) {
+        if (opinionsData.length > 0 && currentComment === opinionsData.length) {
             setTimeout(() => {
                 setIsAnimating(false);
                 setCurrentComment(0);
             }, 1000);
         }
-    }, [currentComment]);
+    }, [currentComment, opinionsData]);
 
     return (
         <div className="opinions-container">
@@ -46,10 +59,12 @@ const Opinions = () => {
                         <p>{comment.text}</p>
                     </div>
                 ))}
-                <div className="opinion">
-                    <img src={opinionsData[0].img} alt="comment" />
-                    <p>{opinionsData[0].text}</p>
-                </div>
+                {opinionsData.length > 0 && (
+                    <div className="opinion">
+                        <img src={opinionsData[0].img} alt="comment" />
+                        <p>{opinionsData[0].text}</p>
+                    </div>
+                )}
             </div>
         </div>
     );

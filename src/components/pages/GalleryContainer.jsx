@@ -1,12 +1,25 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Gallery from './Gallery';
 import GalleryThumbnail from './GalleryThumbnail';
 import '../../App.css';
 import './GalleryContainer.css';
-import galleryData from '../../assets/config/galleriesConfig.json';
 
 const GalleryContainer = () => {
     const [selectedGallery, setSelectedGallery] = useState(null);
+    const [galleryData, setGalleryData] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('config/galleriesConfig.json');
+                const data = await response.json();
+                setGalleryData(data);
+            } catch (error) {
+                console.error('Error loading galleries config:', error);
+            }
+        };
+        fetchData();
+    }, []);
 
     const handleGalleryClick = (galleryId) => {
         setSelectedGallery(galleryId);
@@ -23,7 +36,7 @@ const GalleryContainer = () => {
                     <button className="prev-button" onClick={handleBackToThumbnails}>
                         &lt;
                     </button>
-                    <Gallery galleryName={selectedGallery}/>
+                    <Gallery galleryName={selectedGallery} />
                 </>
             ) : (
                 <div className="thumbnail-grid">
