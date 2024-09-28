@@ -10,6 +10,7 @@ const Contact = () => {
         name: '',
         email: '',
         phone: '',
+        weddingDate: '',
         message: '',
     });
 
@@ -20,6 +21,11 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        // Sprawdzenie, czy wszystkie pola są wypełnione
+        if (!formData.name || !formData.email || !formData.phone || !formData.weddingDate || !formData.message) {
+            alert(t('contact.all_fields_required'));
+            return;
+        }
         emailjs.sendForm('service_ii4htdo', 'template_n40tmu1', e.target, '2MYnHPXdGIHXf_bxO')
             .then((result) => {
                 alert(t('contact.send_alert_success'));
@@ -32,7 +38,7 @@ const Contact = () => {
     };
 
     return (
-        <>
+        <div className="contact-container">
             <form onSubmit={handleSubmit} className="contact-form">
                 <div className="form-group">
                     <label htmlFor="name">{t('contact.name')}:</label>
@@ -47,12 +53,20 @@ const Contact = () => {
                     <input type="tel" id="phone" name="phone" required onChange={handleChange} />
                 </div>
                 <div className="form-group">
+                    <label htmlFor="weddingDate">{t('contact.wedding_date')}:</label>
+                    <input type="date" id="weddingDate" name="weddingDate" required onChange={handleChange} />
+                </div>
+                <div className="form-group">
                     <label htmlFor="message">{t('contact.message')}:</label>
                     <textarea id="message" name="message" required onChange={handleChange}></textarea>
                 </div>
                 <button type="submit" className="submit-button">{t('contact.send')}</button>
             </form>
-        </>
+            <div className="contact-info">
+                <img src="public/images/img-test-5-small.jpg" alt="Example" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget vestibulum justo, nec hendrerit sapien. Aenean nec lacus ligula. Curabitur mollis tortor vitae odio suscipit consequat.</p>
+            </div>
+        </div>
     );
 };
 

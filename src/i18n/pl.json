@@ -30,6 +30,7 @@
     "name": "Imię",
     "email": "Email",
     "phone": "Telefon",
+    "wedding_date": "Data ślubu",
     "message": "Wiadomość",
     "send": "Wyślij",
     "send_alert_success": "Wiadomość została pomyślnie wysłana",

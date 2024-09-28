@@ -30,6 +30,7 @@
     "name": "Name",
     "email": "Email",
     "phone": "Phone",
+    "wedding_date": "Wedding date",
     "message": "Message",
     "send": "Send",
     "send_alert_success": "Message sent successfully",

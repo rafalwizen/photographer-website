@@ -22,7 +22,7 @@ function App() {
                     </Routes>
                 </div>
                 <Opinions />
-                <Sidebar />
+                {/*<Sidebar />*/}
             </div>
         </Router>
     );
