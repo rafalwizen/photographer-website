@@ -9,11 +9,11 @@ export default defineConfig({
       targets: [
         {
           src: 'config/opinionsConfig.json',
-          dest: ''
+          dest: 'config'
         },
         {
           src: 'config/galleriesConfig.json',
-          dest: ''
+          dest: 'config'
         }
       ]
     })
