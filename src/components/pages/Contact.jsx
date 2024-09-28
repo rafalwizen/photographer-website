@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import '../../App.css';
 import './Contact.css';
 import { useTranslation } from "react-i18next";
+import img1 from '../../../public/images/img-test-5-small.jpg';
 
 const Contact = () => {
     const { t } = useTranslation();
@@ -63,7 +64,7 @@ const Contact = () => {
                 <button type="submit" className="submit-button">{t('contact.send')}</button>
             </form>
             <div className="contact-info">
-                <img src="public/images/img-test-5-small.jpg" alt="Example" />
+                <img src={img1} alt="Example" />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget vestibulum justo, nec hendrerit sapien. Aenean nec lacus ligula. Curabitur mollis tortor vitae odio suscipit consequat.</p>
             </div>
         </div>
