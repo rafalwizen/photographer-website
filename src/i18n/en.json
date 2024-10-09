@@ -30,10 +30,11 @@
     "name": "Name",
     "email": "Email",
     "phone": "Phone",
-    "wedding_date": "Wedding date",
+    "wedding_date": "Wedding&nbsp;date",
     "message": "Message",
     "send": "Send",
-    "send_alert_success": "Message sent successfully",
-    "send_alert_error": "An error occurred, please try again"
+    "send_alert_success": "Message sent! Thanks!",
+    "send_alert_error": "Oppps! An error occurred, please try again or sent me an email. Thanks!",
+    "info": "Please contact me via the form or directly to my email:"
   }
 }
