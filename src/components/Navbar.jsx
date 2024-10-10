@@ -46,15 +46,15 @@ function Navbar() {
                                 {t('navbar.gallery')}
                             </Link>
                         </li>
-                        <li className={'nav-item'}>
-                            <Link
-                                to={'/offer'}
-                                className={'nav-links'}
-                                onClick={closeMobileMenu}
-                            >
-                                {t('navbar.offer')}
-                            </Link>
-                        </li>
+                        {/*<li className={'nav-item'}>*/}
+                        {/*    <Link*/}
+                        {/*        to={'/offer'}*/}
+                        {/*        className={'nav-links'}*/}
+                        {/*        onClick={closeMobileMenu}*/}
+                        {/*    >*/}
+                        {/*        {t('navbar.offer')}*/}
+                        {/*    </Link>*/}
+                        {/*</li>*/}
                         <li className={'nav-item'}>
                             <Link
                                 to={'/contact'}

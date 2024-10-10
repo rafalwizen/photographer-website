@@ -36,5 +36,8 @@
     "send_alert_success": "Wiadomość została wysłana! Dziękujemy!",
     "send_alert_error": "Oppps! Coś się nam wysypało, spróbuj ponownie lub napisz do mnie maila. Dziękuję!",
     "info": "Zapraszam do kontaktu przez formularz lub bezpośrednio na maila:"
+  },
+  "about" : {
+    "temp_p": "Strona w przebudowie, zapraszam do formularza kontaktowego, naszej (jeszcze trochę okrojonej) galerii oraz na nasze social media"
   }
 }

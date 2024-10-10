@@ -17,11 +17,11 @@ function App() {
                     <Routes>
                         <Route path={"/"} element={<About />} />
                         <Route path={"/gallery"} element={<GalleryContainer />} />
-                        <Route path={"/offer"} element={<Offer />} />
+                        {/*<Route path={"/offer"} element={<Offer />} />*/}
                         <Route path={"/contact"} element={<Contact />} />
                     </Routes>
                 </div>
-                <Opinions />
+                {/*<Opinions />*/}
                 {/*<Sidebar />*/}
             </div>
         </Router>

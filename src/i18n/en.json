@@ -36,5 +36,8 @@
     "send_alert_success": "Message sent! Thanks!",
     "send_alert_error": "Oppps! An error occurred, please try again or sent me an email. Thanks!",
     "info": "Please contact me via the form or directly to my email:"
+  },
+  "about" : {
+    "temp_p": "The website is under construction, please use the contact form or visit our (still somewhat limited) gallery and our social media"
   }
 }
