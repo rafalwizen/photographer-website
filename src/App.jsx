@@ -1,5 +1,6 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from 'react';
 import Navbar from "./components/Navbar.jsx";
 import Sidebar from "./components/Sidebar.jsx";
 import Opinions from "./components/Opinions.jsx";
@@ -8,9 +9,20 @@ import GalleryContainer from "./components/pages/GalleryContainer.jsx";
 import Offer from "./components/pages/Offer.jsx";
 import Contact from "./components/pages/Contact.jsx";
 
-function App() {
+const TrackPageView = ({ logPageView }) => {
+    const location = useLocation();
+
+    useEffect(() => {
+        logPageView();
+    }, [location, logPageView]);
+
+    return null;
+};
+
+function App({ logPageView }) {
     return (
         <Router>
+            <TrackPageView logPageView={logPageView} />
             <div className="app-container">
                 <Navbar />
                 <div className="main-content">
