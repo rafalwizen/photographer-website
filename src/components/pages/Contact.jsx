@@ -25,8 +25,8 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!formData.name || !formData.email || !formData.phone || !formData.weddingDate || !formData.message) {
-            alert(t('contact.all_fields_required'));
-            return;
+            setNotification({ message: t('contact.send_alert_success'), type: 'success' });
+            setTimeout(() => setNotification(null), 3000);
         }
         fetch('config/config.json')
             .then(response => response.json())
