@@ -7,19 +7,30 @@ A photographer's website built with React, designed to showcase a portfolio and 
 ## Website Link
 [http://rozbickipawel.pl/](http://rozbickipawel.pl/)
 
-## Technologies
-- React
-- CSS
-- HTML
-
 ## Features
 - 🖼️ Portfolio showcase
 - 📬 Contact form to reach the photographer
 - 💻 Responsive design, adaptable to various screen resolutions
 
+## Technology
+- React
+
 ## Screenshots
 ![Screen 1](screenshots/screenshot_1.jpg)
 ![Screen 2](screenshots/screenshot_2.jpg)
+
+## Custom solution
+To allow the site owner to easily add new galleries and photos without a specialized interface, the option to specify gallery settings in the file [galleriesConfig.json](https://github.com/rafalwizen/photographer-website/blob/master/config/galleriesConfig.json) was implemented:
+
+![Screen 3](screenshots/screenshot_3.jpg)
+- name - description of the gallery on the thumbnail
+- thumbnail - file name of the gallery thumbnail
+- folder - folder name
+- numberOfImages - number of images in the gallery
+
+![Screen 4](screenshots/screenshot_4.jpg)
+
+Each image in the gallery must be named "N-small.jpg", where N is the next natural number
 
 ## Contact
 If you'd like to get in touch, please write to: [rafal.wizen@gmail.com](mailto:rafal.wizen@gmail.com)
