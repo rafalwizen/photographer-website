@@ -20,7 +20,7 @@ Strona internetowa dla fotografa, napisana w technologii React, umożliwiająca 
 ![Screen 2](screenshots/screenshot_2.jpg)
 
 ## Autorskie rozwiązanie 
-Aby właściciel strony mógł łatwo dodawać nowe galerie oraz zdjęcia ale bez specjalnego interfejsu zostałą zaimpelmentowana mozliwość podania ustawie galerii w pliku [galleriesConfig.json](https://github.com/rafalwizen/photographer-website/blob/master/config/galleriesConfig.json):
+Aby właściciel strony mógł łatwo dodawać nowe galerie oraz zdjęcia ale bez specjalnego interfejsu została zaimpelmentowana możliwość podania ustawień galerii w pliku [galleriesConfig.json](https://github.com/rafalwizen/photographer-website/blob/master/config/galleriesConfig.json):
 
 ![Screen 3](screenshots/screenshot_3.jpg)
 - name - opis galerii na miniaturze,

@@ -20,7 +20,7 @@ A photographer's website built with React, designed to showcase a portfolio and 
 ![Screen 2](screenshots/screenshot_2.jpg)
 
 ## Custom solution
-To allow the site owner to easily add new galleries and photos without a specialized interface, the option to specify gallery settings in the file [galleriesConfig.json](https://github.com/rafalwizen/photographer-website/blob/master/config/galleriesConfig.json) was implemented:
+In order for the website owner to easily add new galleries and photos without a special interface, the ability to provide gallery settings in the [galleriesConfig.json](https://github.com/rafalwizen/photographer-website/blob/master/config/galleriesConfig.json) file has been implemented:
 
 ![Screen 3](screenshots/screenshot_3.jpg)
 - name - description of the gallery on the thumbnail
