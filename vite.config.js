@@ -14,6 +14,10 @@ export default defineConfig({
         {
           src: 'config/galleriesConfig.json',
           dest: 'config'
+        },
+        {
+          src: 'config/config.json',
+          dest: 'config'
         }
       ]
     })

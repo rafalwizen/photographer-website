@@ -43,6 +43,8 @@ const Contact = () => {
             })
             .catch((error) => {
                 console.error('Error loading config:', error);
+                setNotification({ message: t('contact.send_alert_error'), type: 'error' });
+                setTimeout(() => setNotification(null), 3000);
             });
     };
 
