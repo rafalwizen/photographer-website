@@ -2,12 +2,9 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from 'react';
 import Navbar from "./components/Navbar.jsx";
-import Sidebar from "./components/Sidebar.jsx";
-import Opinions from "./components/Opinions.jsx";
 import About from "./components/pages/About.jsx";
-import GalleryContainer from "./components/pages/GalleryContainer.jsx";
-import Offer from "./components/pages/Offer.jsx";
 import Contact from "./components/pages/Contact.jsx";
+import GallerySimple from "./components/pages/GallerySimple.jsx";
 
 const TrackPageView = ({ logPageView }) => {
     const location = useLocation();
@@ -28,7 +25,8 @@ function App({ logPageView }) {
                 <div className="main-content">
                     <Routes>
                         <Route path={"/"} element={<About />} />
-                        <Route path={"/gallery"} element={<GalleryContainer />} />
+                        {/*<Route path={"/gallery"} element={<GalleryContainer />} />*/}
+                        <Route path={"/gallery"} element={<GallerySimple />} />
                         {/*<Route path={"/offer"} element={<Offer />} />*/}
                         <Route path={"/contact"} element={<Contact />} />
                     </Routes>
