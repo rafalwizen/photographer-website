@@ -88,6 +88,10 @@
         position: relative;
     }
 
+    .navbar {
+        height: 100px;
+    }
+
     .nav-menu {
         display: flex;
         flex-direction: column;
@@ -141,13 +145,13 @@
         top: 0;
         right: 10px;
         transform: translateY(50%);
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         cursor: pointer;
     }
 
     .fa-times {
         color: #373737;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .nav-links-mobile {
@@ -171,10 +175,9 @@
         transition: 250ms;
     }
 
-    .language-switcher {
-        position: absolute;
-        top: 15px;
-        right: 50px;
+    .navbar .language-switcher button {
+        padding: 2px 6px;
+        font-size: 0.8rem;
     }
 }
 
