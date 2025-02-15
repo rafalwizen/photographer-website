@@ -8,14 +8,6 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: 'config/opinionsConfig.json',
-          dest: 'config'
-        },
-        {
-          src: 'config/galleriesConfig.json',
-          dest: 'config'
-        },
-        {
           src: 'config/config.json',
           dest: 'config'
         }

@@ -25,14 +25,10 @@ function App({ logPageView }) {
                 <div className="main-content">
                     <Routes>
                         <Route path={"/"} element={<About />} />
-                        {/*<Route path={"/gallery"} element={<GalleryContainer />} />*/}
                         <Route path={"/gallery"} element={<GallerySimple />} />
-                        {/*<Route path={"/offer"} element={<Offer />} />*/}
                         <Route path={"/contact"} element={<Contact />} />
                     </Routes>
                 </div>
-                {/*<Opinions />*/}
-                {/*<Sidebar />*/}
             </div>
         </Router>
     );
